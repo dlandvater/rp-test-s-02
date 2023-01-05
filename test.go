@@ -74,7 +74,7 @@ func testHandler(w http.ResponseWriter, r *http.Request) {
 	if err1 != nil {
 		log.Fatal(err1)
 	}
-	defer dataClient.Close()
+	//	defer dataClient.Close()
 
 	//DML insert multiple rows
 	_, err2 := dataClient.ReadWriteTransaction(ctx, func(ctx context.Context, txn *spanner.ReadWriteTransaction) error {
