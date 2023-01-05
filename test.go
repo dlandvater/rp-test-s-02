@@ -4,7 +4,6 @@ import (
 	"cloud.google.com/go/spanner"
 	"context"
 	"fmt"
-
 	//"github.com/docker/docker/client"
 	"log"
 	"net/http"
